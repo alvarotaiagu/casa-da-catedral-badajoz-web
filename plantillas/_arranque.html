@@ -1,0 +1,28 @@
+<script>
+/* Bloqueante a propósito: las clases de JS, de cortina y (en revisión) de
+   densidad se resuelven antes del primer pintado. */
+(function () {
+  var h = document.documentElement;
+  h.classList.remove('sin-js');
+  h.classList.add('con-js');
+  /* quien llega desde otra página de la web ya ha visto la cortina (y así
+     la transición entre el díptico y la casa no queda tapada) */
+  try { if (document.referrer && new URL(document.referrer).origin === location.origin) h.classList.add('sin-cortina'); } catch (e) {}
+  /* red de seguridad: si main.js no llega, la cortina se va igual */
+  setTimeout(function () { h.classList.add('cortina-fuera'); }, 6500);
+  /* [MANDO DE MAQUETA] la densidad guardada solo cuenta en modo revisión (?revision) */
+  if (!/[?&]revision\b/.test(location.search)) return;
+  h.classList.add('es-revision');
+  try {
+    var d = localStorage.getItem('cdc-densidad');
+    if (d === 'sobria' || d === 'vecina') {
+      h.classList.remove('densidad-vecina', 'densidad-sobria');
+      h.classList.add('densidad-' + d);
+    }
+  } catch (e) {}
+  /* en la sobria no hay View Transitions (la página nueva decide aquí, antes de pintar) */
+  window.addEventListener('pagereveal', function (e) { if (e.viewTransition && h.classList.contains('densidad-sobria')) e.viewTransition.skipTransition(); });
+  /* fin del bloque [MANDO DE MAQUETA] */
+})();
+</script>
+<noscript><style>.cortina{display:none!important}</style></noscript>

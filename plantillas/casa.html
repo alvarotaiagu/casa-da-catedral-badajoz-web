@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+  Casa da Catedral · {{nombre}}
+  PÁGINA GENERADA por scripts/construir.mjs desde data/casas.json y esta
+  plantilla (plantillas/casa.html). No editar {{slug}}.html a mano: cambiar el
+  JSON o la plantilla y volver a ejecutar  node scripts/construir.mjs
+-->
+<!-- ═══ [MANDO DE MAQUETA] AVISO: esta maqueta lleva un mando de demostración
+     (abajo a la izquierda, solo con ?revision en la URL) que cambia entre dos
+     densidades visuales. NO DEBE VIAJAR A PRODUCCIÓN: node scripts/quitar-mando.mjs
+     fin del bloque [MANDO DE MAQUETA] ═══ -->
+<html lang="es" class="sin-js densidad-vecina">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titulo}}</title>
+<meta name="description" content="{{descripcion}}">
+<meta name="theme-color" content="#1D1B19">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{nombre}} · Casa da Catedral, Badajoz">
+<meta property="og:description" content="{{descripcion}}">
+<meta property="og:image" content="assets/og/og-{{slug}}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ%C3%81%C3%89%C3%8D%C3%93%C3%9Aabcdefghijklmnopqrstuvwxyz%C3%A1%C3%A9%C3%AD%C3%B3%C3%BA%20">
+<link rel="stylesheet" href="css/estilos.css">
+<!-- ⟦comun:arranque⟧ -->
+<!-- ⟦/comun:arranque⟧ -->
+{{jsonld}}
+</head>
+<body class="pagina-casa pagina-casa--{{slug}}">
+{{simbolos}}
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<!-- ⟦comun:cortina⟧ -->
+<!-- ⟦/comun:cortina⟧ -->
+
+<!-- ⟦comun:cabecera⟧ -->
+<!-- ⟦/comun:cabecera⟧ -->
+
+<main id="contenido">
+
+  <!-- ═══════════════ 1 · HERO de la casa: su torre, con la reja delante ═══════════════ -->
+  <section class="casa-hero casa-hero--{{slug}}" id="inicio" aria-labelledby="casa-nombre">
+    <div class="ancho casa-hero__rejilla">
+      <div class="casa-hero__texto">
+        <p class="eti"><a href="./#casas">Casa da Catedral</a> · las casas</p>
+        {{adorno}}
+        <h1 class="casa-hero__nombre" id="casa-nombre" data-revelar="letras">{{nombre}}</h1>
+        <p class="casa-hero__datos">{{datos}}</p>
+        <p class="casa-hero__caracter">{{caracter}}</p>
+        {{origen}}
+        <div class="casa-hero__botones">
+          <a class="boton boton--oscuro iman" href="./?casa={{slug}}#fechas"><span>Consultar fechas para {{nombre}}</span></a>
+          <a class="boton boton--linea" href="{{booking}}" target="_blank" rel="noopener"><span>Reservar en Booking</span><svg aria-hidden="true"><use href="#i-externo"/></svg></a>
+        </div>
+      </div>
+      <figure class="casa-hero__figura">
+        <div class="casa-hero__foto">
+          {{hero-foto}}
+          <div class="casa-hero__reja" aria-hidden="true"><div class="casa-hero__reja-entrada">{{reja}}</div></div>
+        </div>
+        <figcaption>{{hero-pie}}</figcaption>
+        <div class="casa-hero__llavero">{{llavero}}</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 2 · LA CASA, POR ESTANCIAS ═══════════════ -->
+  <section class="estancias" id="estancias" aria-labelledby="estancias-titulo">
+    <div class="friso-sep" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-oscuro)"/></svg></div>
+    <div class="ancho">
+      <header class="estancias__cab">
+        <p class="eti">{{nombre}}, por dentro</p>
+        <h2 class="titulo-seccion" id="estancias-titulo" data-revelar="palabras">La casa, por estancias</h2>
+      </header>
+      <ul class="estancias__lista">
+{{estancias}}
+      </ul>
+      <div class="camas">
+        <h3 class="camas__titulo">Camas</h3>
+        <dl class="camas__lista">
+{{camas}}
+        </dl>
+        <p class="camas__nota">{{resumen}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 3 · SU CARÁCTER ═══════════════ -->
+  <section class="caracter tono-piedra" id="caracter" aria-labelledby="caracter-titulo">
+    <div class="friso-sep" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-oscuro)"/></svg></div>
+    <div class="ancho">
+      <header class="caracter__cab">
+        <p class="eti">Su carácter</p>
+        <h2 class="titulo-seccion" id="caracter-titulo" data-revelar="palabras">Lo que solo tiene {{nombre}}</h2>
+      </header>
+      <ul class="caracter__lista">
+{{detalles}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 4 · SUS NOTAS ═══════════════ -->
+  <section class="notas" id="notas" aria-labelledby="notas-titulo">
+    <div class="friso-sep" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-oscuro)"/></svg></div>
+    <div class="ancho notas__rejilla">
+      <header class="notas__cab">
+        <p class="eti">Sus notas</p>
+        <h2 class="titulo-seccion" id="notas-titulo" data-revelar="palabras">Lo que dicen en Booking</h2>
+        <p class="notas__general"><b>{{nota}}</b><span>Excepcional<br>{{comentarios}} comentarios en Booking</span></p>
+        <a class="enlace" href="{{booking}}#tab-reviews" target="_blank" rel="noopener">Leer todas en Booking</a>
+      </header>
+      <ul class="notas__barras" aria-label="Notas por categoría en Booking">
+{{categorias}}
+      </ul>
+      <ul class="notas__citas">
+{{citas}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 5 · LO COMÚN Y SU HORARIO ═══════════════ -->
+  <section class="lo-comun tono-piedra" id="lo-comun" aria-labelledby="comun-titulo">
+    <div class="friso-sep" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-oscuro)"/></svg></div>
+    <div class="ancho lo-comun__rejilla">
+      <div>
+        <h2 class="titulo-pequeno" id="comun-titulo">Y como {{otra-nombre}}…</h2>
+        <p class="lo-comun__linea">Ascensor que entra en casa, entrada autónoma, terraza con ducha y la torre al lado, y se admiten mascotas. <a class="enlace" href="./#comun">Todo lo que tienen las dos</a></p>
+      </div>
+      <dl class="horario horario--solo">
+{{horario}}
+      </dl>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 6 · LA OTRA CASA ═══════════════ -->
+  <section class="otra" id="otra" aria-labelledby="otra-titulo">
+    <div class="friso-sep" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-oscuro)"/></svg></div>
+    <div class="ancho">
+      <h2 class="eti" id="otra-titulo">La otra casa</h2>
+      {{otra}}
+    </div>
+  </section>
+</main>
+
+<!-- ═══════════════ galería de una estancia ═══════════════ -->
+<dialog class="galeria" id="galeria" aria-labelledby="galeria-nombre">
+  <div class="galeria__cab">
+    <h2 class="galeria__nombre" id="galeria-nombre">Estancia</h2>
+    <p class="galeria__cuenta" id="galeria-cuenta" aria-live="polite"></p>
+    <button class="galeria__cerrar" type="button" id="galeria-cerrar" aria-label="Cerrar la galería"><svg aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+  </div>
+  <div class="galeria__escena">
+    <button class="galeria__flecha galeria__flecha--ant" type="button" id="galeria-ant" aria-label="Foto anterior"><svg aria-hidden="true"><use href="#i-izquierda"/></svg></button>
+    <figure class="galeria__figura" id="galeria-figura"></figure>
+    <button class="galeria__flecha galeria__flecha--sig" type="button" id="galeria-sig" aria-label="Foto siguiente"><svg aria-hidden="true"><use href="#i-derecha"/></svg></button>
+  </div>
+  <ul class="galeria__miniaturas" id="galeria-miniaturas"></ul>
+</dialog>
+
+<!-- ⟦comun:pie⟧ -->
+<!-- ⟦/comun:pie⟧ -->
+
+<!-- ⟦comun:avisos⟧ -->
+<!-- ⟦/comun:avisos⟧ -->
+
+<script type="application/json" id="estancias-datos">{{estancias-json}}</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

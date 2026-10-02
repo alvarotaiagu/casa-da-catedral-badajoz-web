@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- ═══ [MANDO DE MAQUETA] AVISO: el pie y los avisos de esta página llevan el mando de demostración
+     (solo con ?revision). NO DEBE VIAJAR A PRODUCCIÓN: node scripts/quitar-mando.mjs
+     fin del bloque [MANDO DE MAQUETA] ═══ -->
+<html lang="es" class="sin-js densidad-vecina sin-cortina">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso legal · Casa da Catedral</title>
+<meta name="theme-color" content="#1D1B19">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=dfbbd4cb">
+<!-- ⟦comun:arranque⟧ -->
+<script>
+/* Bloqueante a propósito: las clases de JS, de cortina y (en revisión) de
+   densidad se resuelven antes del primer pintado. */
+(function () {
+  var h = document.documentElement;
+  h.classList.remove('sin-js');
+  h.classList.add('con-js');
+  /* quien llega desde otra página de la web ya ha visto la cortina (y así
+     la transición entre el díptico y la casa no queda tapada) */
+  try { if (document.referrer && new URL(document.referrer).origin === location.origin) h.classList.add('sin-cortina'); } catch (e) {}
+  /* red de seguridad: si main.js no llega, la cortina se va igual */
+  setTimeout(function () { h.classList.add('cortina-fuera'); }, 6500);
+  /* [MANDO DE MAQUETA] la densidad guardada solo cuenta en modo revisión (?revision) */
+  if (!/[?&]revision\b/.test(location.search)) return;
+  h.classList.add('es-revision');
+  try {
+    var d = localStorage.getItem('cdc-densidad');
+    if (d === 'sobria' || d === 'vecina') {
+      h.classList.remove('densidad-vecina', 'densidad-sobria');
+      h.classList.add('densidad-' + d);
+    }
+  } catch (e) {}
+  /* en la sobria no hay View Transitions (la página nueva decide aquí, antes de pintar) */
+  window.addEventListener('pagereveal', function (e) { if (e.viewTransition && h.classList.contains('densidad-sobria')) e.viewTransition.skipTransition(); });
+  /* fin del bloque [MANDO DE MAQUETA] */
+})();
+</script>
+<noscript><style>.cortina{display:none!important}</style></noscript>
+<!-- ⟦/comun:arranque⟧ -->
+</head>
+<body class="pagina-legal">
+<!-- ⟦gen:simbolos⟧ -->
+<svg class="simbolos" aria-hidden="true" focusable="false" width="0" height="0"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4E3DF"/><stop offset=".35" stop-color="#9C9B97"/><stop offset=".55" stop-color="#D2D1CC"/><stop offset="1" stop-color="#6E6D69"/></linearGradient><pattern id="friso-oscuro" width="17.27" height="42" patternUnits="userSpaceOnUse"><path d="M8.64 2L17.27 21L8.64 40L0 21Z" fill="none" stroke="#1D1B19" stroke-width="1.3"/><rect width="17.27" height="2.2" fill="#1D1B19"/><rect y="39.8" width="17.27" height="2.2" fill="#1D1B19"/></pattern><pattern id="friso-claro" width="17.27" height="42" patternUnits="userSpaceOnUse"><path d="M8.64 2L17.27 21L8.64 40L0 21Z" fill="none" stroke="#A18265" stroke-width="1.3"/><rect width="17.27" height="2.2" fill="#A18265"/><rect y="39.8" width="17.27" height="2.2" fill="#A18265"/></pattern></defs><symbol id="lis" viewBox="0 0 100 112"><g fill="currentColor"><path d="M50 0C55.6 9 66.5 22 66 34C65.6 46 57.5 58 55.4 68.4L44.6 68.4C42.5 58 34.4 46 34 34C33.5 22 44.4 9 50 0Z"/><path d="M58.2 68.4C60.8 58 66.4 47.2 75.4 42.4C84.8 37.4 96.4 39.4 99.4 49.6C102 58.6 97.4 69.4 88.6 71.6C82 73.2 76.2 69.6 76.6 64C77 59 82.6 56.6 86.4 59.6C88.8 61.6 88 65 85.4 65.6C88.6 64.4 91.6 60 89.6 55.4C87.4 50.4 80.8 49.8 75.6 53C69.4 55.4 65 62.6 63.6 68.4Z"/><path d="M41.8 68.4C39.2 58 33.6 47.2 24.6 42.4C15.2 37.4 3.6 39.4 0.6 49.6C-2 58.6 2.6 69.4 11.4 71.6C18 73.2 23.8 69.6 23.4 64C23 59 17.4 56.6 13.6 59.6C11.2 61.6 12 65 14.6 65.6C11.4 64.4 8.4 60 10.4 55.4C12.6 50.4 19.2 49.8 24.4 53C30.6 55.4 35 62.6 36.4 68.4Z"/><path d="M36.4 68.2H63.6C65.6 68.2 66.4 69.4 66.4 71V73.6C66.4 75.2 65.6 76.4 63.6 76.4H36.4C34.4 76.4 33.6 75.2 33.6 73.6V71C33.6 69.4 34.4 68.2 36.4 68.2Z"/><path d="M41.6 76.4H58.4C58 88 54.6 100.4 50 112C45.4 100.4 42 88 41.6 76.4Z"/><path d="M58.6 76.4C66.4 78.4 76.6 82.2 79.2 89.4C81.2 95 77.4 99.4 72.4 98.4C68.2 97.6 67.2 92.6 70.6 90.6C73 89.2 75.6 90.8 75 93C76.4 89.6 72.4 85.6 66.4 83.2C62.8 81.8 59.8 80.6 57.8 79.4Z"/><path d="M41.4 76.4C33.6 78.4 23.4 82.2 20.8 89.4C18.8 95 22.6 99.4 27.6 98.4C31.8 97.6 32.8 92.6 29.4 90.6C27 89.2 24.4 90.8 25 93C23.6 89.6 27.6 85.6 33.6 83.2C37.2 81.8 40.2 80.6 42.2 79.4Z"/></g></symbol><symbol id="sello" viewBox="0 0 200 200"><g fill="currentColor"><g class="sello__laurel"><path d="M92.94 181.74A81.05 81.05 0 0 1 71.19 25.94L71.47 26.69A78.95 78.95 0 0 0 93.12 179.65Z"/><path d="M79.29 178.27C74.63 185.8 67.19 187.71 61.78 185.64C64.08 180.33 70.65 176.35 79.29 178.27Z"/><path d="M79.29 178.27C72 177.04 68.71 171.83 69.17 166.94C74.08 167.03 78.89 170.89 79.29 178.27Z"/><path d="M60.13 170.36C53.95 176.19 46.59 176.12 42.09 172.87C45.53 168.52 52.6 166.44 60.13 170.36Z"/><path d="M60.13 170.36C53.68 167.42 51.91 161.78 53.54 157.36C58.07 158.66 61.58 163.42 60.13 170.36Z"/><path d="M43.65 157.79C36.5 161.66 29.7 159.78 26.34 155.67C30.59 152.49 37.64 152.31 43.65 157.79Z"/><path d="M43.65 157.79C38.4 153.48 38.16 147.83 40.75 144.14C44.62 146.45 46.7 151.72 43.65 157.79Z"/><path d="M30.95 141.4C23.4 143.22 17.58 139.82 15.48 135.2C20.19 133.31 26.75 134.87 30.95 141.4Z"/><path d="M30.95 141.4C27.16 136.14 28.32 130.86 31.63 128.09C34.63 131.18 35.25 136.55 30.95 141.4Z"/><path d="M22.89 122.3C15.48 122.13 10.96 117.57 10.16 112.8C14.96 112.21 20.62 115.25 22.89 122.3Z"/><path d="M22.89 122.3C20.69 116.53 23.05 111.94 26.77 110.2C28.79 113.78 28.04 118.88 22.89 122.3Z"/><path d="M20 101.78C13.24 99.81 10.19 94.51 10.62 89.93C15.18 90.56 19.64 94.74 20 101.78Z"/><path d="M20 101.78C19.39 95.93 22.68 92.29 26.53 91.6C27.51 95.38 25.57 99.89 20 101.78Z"/><path d="M22.49 81.19C16.77 77.74 15.27 72.14 16.78 68.05C20.8 69.74 23.87 74.66 22.49 81.19Z"/><path d="M22.49 81.19C23.36 75.68 27.26 73.15 30.95 73.46C30.92 77.17 28.06 80.83 22.49 81.19Z"/><path d="M30.18 61.94C25.79 57.4 25.78 51.92 28.16 48.54C31.42 51.06 33.03 56.3 30.18 61.94Z"/><path d="M30.18 61.94C32.31 57.12 36.49 55.75 39.8 56.93C38.87 60.31 35.36 62.96 30.18 61.94Z"/><path d="M42.56 45.32C39.66 40.11 40.98 35.11 43.96 32.62C46.33 35.7 46.52 40.87 42.56 45.32Z"/><path d="M42.56 45.32C45.67 41.44 49.81 41.21 52.53 43.08C50.87 45.93 47.03 47.49 42.56 45.32Z"/><path d="M58.8 32.43C57.42 27 59.82 22.79 63.13 21.24C64.54 24.61 63.47 29.35 58.8 32.43Z"/><path d="M58.8 32.43C62.56 29.65 66.37 30.45 68.39 32.8C66.19 34.99 62.33 35.48 58.8 32.43Z"/><path d="M71.33 26.31C73.8 22.15 77.77 21.33 80.67 22.73C79.45 25.7 75.95 27.75 71.33 26.31Z"/><path d="M107.06 181.74A81.05 81.05 0 0 0 128.81 25.94L128.53 26.69A78.95 78.95 0 0 1 106.88 179.65Z"/><path d="M120.71 178.27C129.35 176.35 135.92 180.33 138.22 185.64C132.81 187.71 125.37 185.8 120.71 178.27Z"/><path d="M120.71 178.27C121.11 170.89 125.92 167.03 130.83 166.94C131.29 171.83 128 177.04 120.71 178.27Z"/><path d="M139.87 170.36C147.4 166.44 154.47 168.52 157.91 172.87C153.41 176.12 146.05 176.19 139.87 170.36Z"/><path d="M139.87 170.36C138.42 163.42 141.93 158.66 146.46 157.36C148.09 161.78 146.32 167.42 139.87 170.36Z"/><path d="M156.35 157.79C162.36 152.31 169.41 152.49 173.66 155.67C170.3 159.78 163.5 161.66 156.35 157.79Z"/><path d="M156.35 157.79C153.3 151.72 155.38 146.45 159.25 144.14C161.84 147.83 161.6 153.48 156.35 157.79Z"/><path d="M169.05 141.4C173.25 134.87 179.81 133.31 184.52 135.2C182.42 139.82 176.6 143.22 169.05 141.4Z"/><path d="M169.05 141.4C164.75 136.55 165.37 131.18 168.37 128.09C171.68 130.86 172.84 136.14 169.05 141.4Z"/><path d="M177.11 122.3C179.38 115.25 185.04 112.21 189.84 112.8C189.04 117.57 184.52 122.13 177.11 122.3Z"/><path d="M177.11 122.3C171.96 118.88 171.21 113.78 173.23 110.2C176.95 111.94 179.31 116.53 177.11 122.3Z"/><path d="M180 101.78C180.36 94.74 184.82 90.56 189.38 89.93C189.81 94.51 186.76 99.81 180 101.78Z"/><path d="M180 101.78C174.43 99.89 172.49 95.38 173.47 91.6C177.32 92.29 180.61 95.93 180 101.78Z"/><path d="M177.51 81.19C176.13 74.66 179.2 69.74 183.22 68.05C184.73 72.14 183.23 77.74 177.51 81.19Z"/><path d="M177.51 81.19C171.94 80.83 169.08 77.17 169.05 73.46C172.74 73.15 176.64 75.68 177.51 81.19Z"/><path d="M169.82 61.94C166.97 56.3 168.58 51.06 171.84 48.54C174.22 51.92 174.21 57.4 169.82 61.94Z"/><path d="M169.82 61.94C164.64 62.96 161.13 60.31 160.2 56.93C163.51 55.75 167.69 57.12 169.82 61.94Z"/><path d="M157.44 45.32C153.48 40.87 153.67 35.7 156.04 32.62C159.02 35.11 160.34 40.11 157.44 45.32Z"/><path d="M157.44 45.32C152.97 47.49 149.13 45.93 147.47 43.08C150.19 41.21 154.33 41.44 157.44 45.32Z"/><path d="M141.2 32.43C136.53 29.35 135.46 24.61 136.87 21.24C140.18 22.79 142.58 27 141.2 32.43Z"/><path d="M141.2 32.43C137.67 35.48 133.81 34.99 131.61 32.8C133.63 30.45 137.44 29.65 141.2 32.43Z"/><path d="M128.67 26.31C124.05 27.75 120.55 25.7 119.33 22.73C122.23 21.33 126.2 22.15 128.67 26.31Z"/></g><g class="sello__lis" transform="translate(50 41) scale(1)"><path d="M50 0C55.6 9 66.5 22 66 34C65.6 46 57.5 58 55.4 68.4L44.6 68.4C42.5 58 34.4 46 34 34C33.5 22 44.4 9 50 0Z"/><path d="M58.2 68.4C60.8 58 66.4 47.2 75.4 42.4C84.8 37.4 96.4 39.4 99.4 49.6C102 58.6 97.4 69.4 88.6 71.6C82 73.2 76.2 69.6 76.6 64C77 59 82.6 56.6 86.4 59.6C88.8 61.6 88 65 85.4 65.6C88.6 64.4 91.6 60 89.6 55.4C87.4 50.4 80.8 49.8 75.6 53C69.4 55.4 65 62.6 63.6 68.4Z"/><path d="M41.8 68.4C39.2 58 33.6 47.2 24.6 42.4C15.2 37.4 3.6 39.4 0.6 49.6C-2 58.6 2.6 69.4 11.4 71.6C18 73.2 23.8 69.6 23.4 64C23 59 17.4 56.6 13.6 59.6C11.2 61.6 12 65 14.6 65.6C11.4 64.4 8.4 60 10.4 55.4C12.6 50.4 19.2 49.8 24.4 53C30.6 55.4 35 62.6 36.4 68.4Z"/><path d="M36.4 68.2H63.6C65.6 68.2 66.4 69.4 66.4 71V73.6C66.4 75.2 65.6 76.4 63.6 76.4H36.4C34.4 76.4 33.6 75.2 33.6 73.6V71C33.6 69.4 34.4 68.2 36.4 68.2Z"/><path d="M41.6 76.4H58.4C58 88 54.6 100.4 50 112C45.4 100.4 42 88 41.6 76.4Z"/><path d="M58.6 76.4C66.4 78.4 76.6 82.2 79.2 89.4C81.2 95 77.4 99.4 72.4 98.4C68.2 97.6 67.2 92.6 70.6 90.6C73 89.2 75.6 90.8 75 93C76.4 89.6 72.4 85.6 66.4 83.2C62.8 81.8 59.8 80.6 57.8 79.4Z"/><path d="M41.4 76.4C33.6 78.4 23.4 82.2 20.8 89.4C18.8 95 22.6 99.4 27.6 98.4C31.8 97.6 32.8 92.6 29.4 90.6C27 89.2 24.4 90.8 25 93C23.6 89.6 27.6 85.6 33.6 83.2C37.2 81.8 40.2 80.6 42.2 79.4Z"/></g></g></symbol><symbol id="anilla" viewBox="0 0 40 40"><circle cx="20" cy="20" r="15.5" fill="none" stroke="url(#metal)" stroke-width="4.2"/><circle cx="20" cy="20" r="17.6" fill="none" stroke="rgba(0,0,0,.18)" stroke-width=".6"/><path d="M6.2 25.6A15.5 15.5 0 0 1 9 11" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1"/></symbol><symbol id="i-ascensor" viewBox="0 0 24 24"><path d="M3 11L12 3.6L21 11M4.6 9.7V20.5H19.4V9.7M8.6 20.5V12H15.4V20.5M12 12V20.5M10.6 9.4L12 7.8L13.4 9.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-llave" viewBox="0 0 24 24"><path d="M11.4 12A4.4 4.4 0 1 1 2.6 12A4.4 4.4 0 1 1 11.4 12ZM7 9.6V12L8.7 13.1M11.4 12H21.2M17.4 12V15M20 12V14.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-huella" viewBox="0 0 24 24"><path d="M8.4 17.6C8.4 14.8 10 12.8 12 12.8S15.6 14.8 15.6 17.6C15.6 19.3 14.1 20.2 12 20.2S8.4 19.3 8.4 17.6ZM8.2 11.4A1.7 2 0 1 1 4.8 11.4A1.7 2 0 1 1 8.2 11.4ZM11.2 7.6A1.7 2.1 0 1 1 7.8 7.6A1.7 2.1 0 1 1 11.2 7.6ZM16.2 7.6A1.7 2.1 0 1 1 12.8 7.6A1.7 2.1 0 1 1 16.2 7.6ZM19.2 11.4A1.7 2 0 1 1 15.8 11.4A1.7 2 0 1 1 19.2 11.4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-ducha" viewBox="0 0 24 24"><path d="M4.5 21V7A3.5 3.5 0 0 1 8 3.5H10.5A3.5 3.5 0 0 1 14 7V8.5M10 8.5H18L17 11.2H11ZM12 14V15.4M14.5 14.4V15.8M17 14V15.4M13.2 17.8V19.2M15.8 17.8V19.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-pantalla" viewBox="0 0 24 24"><path d="M3 5H21V16.5H3ZM8.5 20H15.5M12 16.5V20M10.4 8.3V13.2L14.6 10.75Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-cama" viewBox="0 0 24 24"><path d="M3 6V19M3 15.5H21V19M21 15.5V12.6C21 11.2 19.9 10 18.5 10H10.8V15.5M5.6 12.6A1.9 1.9 0 1 1 9.4 12.6A1.9 1.9 0 1 1 5.6 12.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-toallas" viewBox="0 0 24 24"><path d="M4.5 7.5H19.5V11.2H4.5ZM5.5 11.2H18.5V15H5.5ZM4.5 15H19.5V18.8H4.5ZM15.5 7.5V11.2M8.5 11.2V15M15.5 15V18.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-ventana" viewBox="0 0 24 24"><path d="M4 3.5H20V20.5H4ZM6.6 6.1H17.4V17.9H6.6ZM12 6.1V17.9M6.6 12H17.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-mesa" viewBox="0 0 24 24"><path d="M2.5 10H21.5M5 10V19M19 10V19M8.5 10V6.2H11V10M13 10V6.2H15.5V10M2.5 13H5M19 13H21.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-portatil" viewBox="0 0 24 24"><path d="M5 5.5H19V15H5ZM2.8 18.5H21.2L19.6 15H4.4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-olla" viewBox="0 0 24 24"><path d="M5 11H19V16.8A3.2 3.2 0 0 1 15.8 20H8.2A3.2 3.2 0 0 1 5 16.8ZM2.8 11H5M19 11H21.2M9 8.4C9 7.2 10 7.2 10 6M12.2 8.4C12.2 7.2 13.2 7.2 13.2 6M15.4 8.4C15.4 7.2 16.4 7.2 16.4 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-lavadora" viewBox="0 0 24 24"><path d="M5 3H19V21H5ZM5 7.2H19M8 5.1H9.4M11.6 5.1H16M16.4 13.6A4.4 4.4 0 1 1 7.6 13.6A4.4 4.4 0 1 1 16.4 13.6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-cuna" viewBox="0 0 24 24"><path d="M4 6.5V20.5M20 6.5V20.5M4 10H20M4 17H20M8 10V17M12 10V17M16 10V17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-plancha" viewBox="0 0 24 24"><path d="M3.5 17H20.5C20.5 12.5 17.8 10 13.6 10H8.8C5.6 10 3.5 13 3.5 17ZM8.8 10V7H18M7 13.6H9M11 13.6H13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-suelo" viewBox="0 0 24 24"><path d="M3 3.5H21V20.5H3ZM3 9.2H21M3 14.8H21M9 3.5V9.2M16 9.2V14.8M7 14.8V20.5M14 14.8V20.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12H20M14 6L20 12L14 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-izquierda" viewBox="0 0 24 24"><path d="M15 5L8 12L15 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-derecha" viewBox="0 0 24 24"><path d="M9 5L16 12L9 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-copiar" viewBox="0 0 24 24"><path d="M8.5 8.5H19.5V19.5H8.5ZM15.5 8.5V4.5H4.5V15.5H8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-sobre" viewBox="0 0 24 24"><path d="M3 5.5H21V18.5H3ZM3 6L12 13L21 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-telefono" viewBox="0 0 24 24"><path d="M7.2 3.5L9.8 3.8L11 8.2L8.8 9.8C9.9 12.3 11.7 14.1 14.2 15.2L15.8 13L20.2 14.2L20.5 16.8C20.5 18.8 18.9 20.5 16.8 20.4C9.7 19.9 4.1 14.3 3.6 7.2C3.5 5.1 5.2 3.5 7.2 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-mensaje" viewBox="0 0 24 24"><path d="M4 5H20V16H11L6.5 19.8V16H4ZM8 9.4H16M8 12.2H13.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-instagram" viewBox="0 0 24 24"><path d="M3.8 8.2A4.4 4.4 0 0 1 8.2 3.8H15.8A4.4 4.4 0 0 1 20.2 8.2V15.8A4.4 4.4 0 0 1 15.8 20.2H8.2A4.4 4.4 0 0 1 3.8 15.8ZM16 12A4 4 0 1 1 8 12A4 4 0 1 1 16 12ZM17 7.1V7.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21C12 21 5.5 14.8 5.5 9.8A6.5 6.5 0 0 1 18.5 9.8C18.5 14.8 12 21 12 21ZM14.4 9.8A2.4 2.4 0 1 1 9.6 9.8A2.4 2.4 0 1 1 14.4 9.8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol><symbol id="i-externo" viewBox="0 0 24 24"><path d="M13 4.5H19.5V11M19.5 4.5L11 13M10 5.5H4.5V19.5H18.5V14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></symbol></svg>
+<!-- ⟦/gen:simbolos⟧ -->
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<!-- ⟦comun:cabecera⟧ -->
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__barra">
+    <a class="cabecera__marca" href="./" aria-label="Casa da Catedral, inicio"><svg class="lis" aria-hidden="true"><use href="#lis"/></svg><span>Casa da Catedral</span></a>
+    <nav class="cabecera__nav" id="menu" aria-label="Principal">
+      <ul class="cabecera__lista">
+        <li><a href="./#casas">Las casas</a></li>
+        <li><a href="./#vista">La vista</a></li>
+        <li data-modulo="libro"><a href="./#libro">Opiniones</a></li>
+        <li class="cabecera__solo-movil"><a href="./ramona.html">Ramona</a></li>
+        <li class="cabecera__solo-movil"><a href="./jeronimo.html">Jerónimo</a></li>
+        <li class="cabecera__cta"><a class="boton boton--mini" href="./#fechas"><span>Consultar fechas</span></a></li>
+      </ul>
+      <p class="cabecera__pie-menu"><svg class="lis" aria-hidden="true"><use href="#lis"/></svg> Apartamentos que son hogar</p>
+    </nav>
+    <button class="hamburguesa" id="hamburguesa" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="hamburguesa__barras" aria-hidden="true"></span><span class="visualmente-oculto">Abrir menú</span>
+    </button>
+  </div>
+</header>
+<!-- ⟦/comun:cabecera⟧ -->
+<main id="contenido" class="legal">
+  <div class="ancho">
+    <p class="eti"><a href="./">Casa da Catedral</a></p>
+    <h1>Aviso legal</h1>
+    <p>En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE), estos son los datos del titular de esta web:</p>
+    <table>
+      <tr><th scope="row">Titular</th><td><span class="pendiente">[PENDIENTE: nombre o razón social]</span></td></tr>
+      <tr><th scope="row">NIF</th><td><span class="pendiente">[PENDIENTE]</span></td></tr>
+      <tr><th scope="row">Domicilio</th><td>C/ Meléndez Valdés, 1 · 06002 Badajoz</td></tr>
+      <tr><th scope="row">Contacto</th><td><span class="pendiente">[PENDIENTE: email o teléfono]</span></td></tr>
+      <tr><th scope="row">Actividad</th><td>Apartamentos turísticos «Ramona» y «Jerónimo» (Casa da Catedral)</td></tr>
+      <tr><th scope="row">Registro</th><td>Registro de Empresas y Actividades Turísticas de Extremadura · licencia AT-BA-00139</td></tr>
+    </table>
+    <h2>Uso de la web</h2>
+    <p>Esta web informa sobre los dos apartamentos. Las reservas se hacen en Booking.com, con sus propias condiciones. El formulario de «Consultar fechas» no envía nada por sí mismo: solo prepara un mensaje que tú decides copiar o enviar.</p>
+    <h2>Propiedad intelectual</h2>
+    <p>Las fotografías son de Casa da Catedral. Los dibujos de la torre, la reja, la flor de lis y los adornos de las puertas se han hecho para esta web. Las opiniones citadas son de huéspedes en Booking.com y se reproducen sin nombre.</p>
+    <h2>Enlaces</h2>
+    <p>La web enlaza a Booking.com, a Instagram y, si lo pides, a Google Maps. Cada uno tiene su propio aviso legal y su política de privacidad.</p>
+  </div>
+</main>
+<!-- ⟦comun:pie⟧ -->
+<div class="friso-sep friso-sep--pie" aria-hidden="true"><svg class="friso"><rect width="100%" height="42" fill="url(#friso-claro)"/></svg></div>
+<footer class="pie tono-oscuro" id="pie">
+  <div class="ancho pie__rejilla">
+    <div class="pie__marca">
+      <svg class="pie__sello" aria-hidden="true"><use href="#sello"/></svg>
+      <p class="pie__nombre">Casa da Catedral</p>
+      <p class="pie__lema">Apartamentos que son hogar</p>
+    </div>
+    <div class="pie__datos">
+      <p>C/ Meléndez Valdés, 1 · 06002 Badajoz</p>
+      <p>Frente a la Catedral, en la Plaza de España</p>
+      <p>Licencia AT-BA-00139</p>
+      <p>Hablamos español e inglés</p>
+    </div>
+    <ul class="pie__enlaces">
+      <li><a href="./ramona.html">Ramona</a></li>
+      <li><a href="./jeronimo.html">Jerónimo</a></li>
+      <li><a href="https://www.instagram.com/casadacatedral/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>@casadacatedral</a></li>
+    </ul>
+  </div>
+  <p class="pie__legal ancho"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <button class="enlace" type="button" id="cookies-reabrir">Aviso de cookies</button> · © <span id="anio">2026</span> Casa da Catedral</p>
+</footer>
+<!-- ⟦/comun:pie⟧ -->
+<!-- ⟦comun:avisos⟧ -->
+<script type="application/json" id="config-datos">{"telefono":null,"email":null,"whatsapp":null,"instagram":"https://www.instagram.com/casadacatedral/","libro_foto":null}</script>
+
+<!-- ───────── Aviso de cookies ───────── -->
+<div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p class="cookies__texto">Esta web no usa cookies de seguimiento. Solo guarda en tu navegador que ya has visto este aviso. <a href="privacidad.html">Más detalles</a>.</p>
+  <button class="boton boton--claro boton--mini" id="cookies-aceptar" type="button"><span>De acuerdo</span></button>
+</div>
+
+<!-- ═══ [MANDO DE MAQUETA] el mando de las dos versiones: solo con ?revision ═══ -->
+<div class="mando" id="mando" hidden>
+  <span class="mando__titulo">Versión</span>
+  <div class="mando__botones" role="group" aria-label="Densidad visual de la maqueta">
+    <button type="button" data-densidad="vecina" aria-pressed="true">Catedral de vecina</button>
+    <button type="button" data-densidad="sobria" aria-pressed="false">Sobria</button>
+  </div>
+  <span class="mando__pie">Dos versiones de la misma web</span>
+  <details class="mando__pendientes">
+    <summary>Pendiente de Verónica</summary>
+    <ul>
+      <li>Sin contacto directo: ni teléfono, ni email, ni WhatsApp</li>
+      <li>La azotea: ¿compartida o de cada casa? [VERIFICAR]</li>
+      <li>La planta de Jerónimo</li>
+      <li>Por qué se llaman Ramona y Jerónimo</li>
+      <li>La licencia AT-BA-00139 sale en las dos fichas: ¿una para las dos?</li>
+      <li>Permiso para la foto del libro de visitas</li>
+    </ul>
+  </details>
+</div>
+<!-- fin del bloque [MANDO DE MAQUETA] ═══ -->
+<!-- ⟦/comun:avisos⟧ -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js?v=f962c6b6"></script>
+</body>
+</html>

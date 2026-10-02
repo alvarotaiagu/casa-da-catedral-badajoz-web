@@ -1,0 +1,24 @@
+<script type="application/json" id="config-datos">{{config}}</script>
+
+<!-- ───────── Aviso de cookies ───────── -->
+<div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p class="cookies__texto">Esta web no usa cookies de seguimiento. Solo guarda en tu navegador que ya has visto este aviso. <a href="privacidad.html">Más detalles</a>.</p>
+  <button class="boton boton--claro boton--mini" id="cookies-aceptar" type="button"><span>De acuerdo</span></button>
+</div>
+
+<!-- ═══ [MANDO DE MAQUETA] el mando de las dos versiones: solo con ?revision ═══ -->
+<div class="mando" id="mando" hidden>
+  <span class="mando__titulo">Versión</span>
+  <div class="mando__botones" role="group" aria-label="Densidad visual de la maqueta">
+    <button type="button" data-densidad="vecina" aria-pressed="true">Catedral de vecina</button>
+    <button type="button" data-densidad="sobria" aria-pressed="false">Sobria</button>
+  </div>
+  <span class="mando__pie">Dos versiones de la misma web</span>
+  <details class="mando__pendientes">
+    <summary>Pendiente de Verónica</summary>
+    <ul>
+{{pendientes}}
+    </ul>
+  </details>
+</div>
+<!-- fin del bloque [MANDO DE MAQUETA] ═══ -->

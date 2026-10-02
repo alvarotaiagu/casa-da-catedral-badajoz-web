@@ -1,0 +1,8 @@
+{
+ "_nota": "Contacto directo de Casa da Catedral. Mientras los tres estén en null, el formulario compone el mensaje pero los envíos están apagados y la acción principal es Booking. Rellenar uno enciende su botón sin tocar nada más (lo lee js/main.js al cargar). Formatos: telefono '+34 600 000 000', email 'nombre@dominio.es', whatsapp '34600000000' (sin + ni espacios). libro_foto: ruta de la foto del libro de visitas cuando haya permiso (por ejemplo 'assets/libro-visitas.jpg'); en null el hueco no se ve.",
+ "telefono": null,
+ "email": null,
+ "whatsapp": null,
+ "instagram": "https://www.instagram.com/casadacatedral/",
+ "libro_foto": null
+}

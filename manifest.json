@@ -1,0 +1,11 @@
+{
+  "name": "Casa da Catedral · Badajoz",
+  "short_name": "Casa da Catedral",
+  "description": "Ramona y Jerónimo: dos apartamentos frente a la Catedral de Badajoz.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#F4EFE7",
+  "theme_color": "#1D1B19",
+  "lang": "es",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

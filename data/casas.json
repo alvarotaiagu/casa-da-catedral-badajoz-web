@@ -1,0 +1,367 @@
+{
+ "_nota": "Fuente única de las dos casas. scripts/construir.mjs genera ramona.html y jeronimo.html (desde plantillas/casa.html) y rellena las partes de la portada que salen de aquí: el díptico, la tabla comparativa, los horarios, los botones de Booking y el JSON-LD. Datos comprobados en Booking el 2026-10-02. 'planta' y 'origen_nombre' en null = pendiente de Verónica: no se enseña nada.",
+ "casas": [
+  {
+   "slug": "ramona",
+   "nombre": "Ramona",
+   "planta": "2.º",
+   "planta_larga": "segunda planta",
+   "origen_nombre": null,
+   "metros": 90,
+   "dormitorios": 2,
+   "banos": 2,
+   "personas": 5,
+   "camas": [
+    {
+     "donde": "Dormitorio 1",
+     "que": "2 camas individuales"
+    },
+    {
+     "donde": "Dormitorio 2",
+     "que": "2 camas individuales"
+    },
+    {
+     "donde": "Salón",
+     "que": "sofá cama"
+    }
+   ],
+   "entrada": {
+    "desde": "14:00",
+    "hasta": "23:30"
+   },
+   "salida": {
+    "desde": "10:30",
+    "hasta": "11:00"
+   },
+   "nota": 9.6,
+   "comentarios": 116,
+   "categorias": [
+    {
+     "nombre": "Limpieza",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Confort",
+     "nota": 9.6
+    },
+    {
+     "nombre": "Instalaciones",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Ubicación",
+     "nota": 10
+    },
+    {
+     "nombre": "Personal",
+     "nota": 10
+    },
+    {
+     "nombre": "Calidad-precio",
+     "nota": 9.4
+    },
+    {
+     "nombre": "WiFi",
+     "nota": 9.5
+    }
+   ],
+   "booking": "https://www.booking.com/hotel/es/casa-da-catedral.es.html",
+   "adorno": "ramona",
+   "adorno_texto": "Una «R» blanca dentro de una corona de flores secas, con una pizarrita colgada",
+   "caracter": "Cálida y en penumbra: un sillón de orejas rojo, el aparador tallado, la cocina de azulejo hidráulico y la forja negra.",
+   "titulo_pagina": "Ramona · la casa del sillón rojo, frente a la Catedral",
+   "descripcion": "Ramona, en la segunda planta de Casa da Catedral (Badajoz): 90 m², dos dormitorios con dos camas cada uno, dos baños y balcón a la torre de la Catedral. Hasta 5 personas.",
+   "fotos": {
+    "diptico": "248106320",
+    "diptico_posicion": "50% 46%",
+    "hero": "248101584-alto",
+    "hero_posicion": "50% 40%",
+    "torre": "248101584",
+    "og": "248106320"
+   },
+   "estancias": [
+    {
+     "id": "salon",
+     "nombre": "Salón y comedor",
+     "texto": "Sofá cama, mesa de comedor grande y el balcón a la plaza.",
+     "fotos": [
+      "248105949",
+      "248118228",
+      "248106031",
+      "248117552",
+      "248106320"
+     ]
+    },
+    {
+     "id": "cocina",
+     "nombre": "Cocina",
+     "texto": "Azulejo hidráulico, lavavajillas, horno, microondas y cafetera.",
+     "fotos": [
+      "248106339",
+      "248106314",
+      "248106312"
+     ]
+    },
+    {
+     "id": "dormitorios",
+     "nombre": "Dormitorios",
+     "texto": "Dos, con dos camas individuales en cada uno.",
+     "fotos": [
+      "248106154",
+      "248106120",
+      "248118666",
+      "248119195"
+     ]
+    },
+    {
+     "id": "banos",
+     "nombre": "Baños",
+     "texto": "Dos, con ducha.",
+     "fotos": [
+      "248117684",
+      "248117489",
+      "248118027"
+     ]
+    },
+    {
+     "id": "balcon",
+     "nombre": "Balcón y vistas",
+     "texto": "La torre al otro lado de la reja.",
+     "fotos": [
+      "248101584",
+      "248106674",
+      "248117591",
+      "248119413"
+     ]
+    }
+   ],
+   "detalles": [
+    {
+     "foto": "248106320",
+     "titulo": "El sillón rojo",
+     "texto": "De orejas, junto a la lámpara de pie. Es el rincón que da color a la casa."
+    },
+    {
+     "foto": "248106316",
+     "titulo": "El aparador tallado",
+     "texto": "Madera oscura con cajones tallados, en el comedor."
+    },
+    {
+     "foto": "248118145",
+     "titulo": "El lazo de terciopelo",
+     "texto": "Rojo, atado al jarrón de la mesa."
+    }
+   ],
+   "marquee": [
+    {
+     "foto": "248118145",
+     "texto": "el lazo de terciopelo"
+    },
+    {
+     "foto": "248106316",
+     "texto": "el aparador tallado"
+    },
+    {
+     "foto": "248106314",
+     "texto": "el azulejo de la cocina"
+    },
+    {
+     "foto": "248106320",
+     "texto": "el sillón rojo"
+    },
+    {
+     "foto": "583881411",
+     "texto": "la «R» de la puerta"
+    }
+   ],
+   "puerta": "583881411"
+  },
+  {
+   "slug": "jeronimo",
+   "nombre": "Jerónimo",
+   "planta": null,
+   "planta_larga": null,
+   "origen_nombre": null,
+   "metros": 90,
+   "dormitorios": 2,
+   "banos": 2,
+   "personas": 5,
+   "camas": [
+    {
+     "donde": "Dormitorio 1",
+     "que": "1 cama doble grande"
+    },
+    {
+     "donde": "Dormitorio 2",
+     "que": "2 camas individuales"
+    },
+    {
+     "donde": "Salón",
+     "que": "sofá cama"
+    }
+   ],
+   "entrada": {
+    "desde": "15:00",
+    "hasta": "23:30"
+   },
+   "salida": {
+    "desde": "11:30",
+    "hasta": "12:00"
+   },
+   "nota": 9.6,
+   "comentarios": 81,
+   "categorias": [
+    {
+     "nombre": "Limpieza",
+     "nota": 9.5
+    },
+    {
+     "nombre": "Confort",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Instalaciones",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Ubicación",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Personal",
+     "nota": 9.9
+    },
+    {
+     "nombre": "Calidad-precio",
+     "nota": 9.4
+    },
+    {
+     "nombre": "WiFi",
+     "nota": 9
+    }
+   ],
+   "booking": "https://www.booking.com/hotel/es/casa-da-catedral-jeronimo.es.html",
+   "adorno": "jeronimo",
+   "adorno_texto": "Una placa en forma de campana colgada de un lazo",
+   "caracter": "Luminosa: arcos blancos, suelo claro, un dormitorio gris azulado con cabecero de forja y la cocina negra.",
+   "titulo_pagina": "Jerónimo · la casa de los arcos, frente a la Catedral",
+   "descripcion": "Jerónimo, en Casa da Catedral (Badajoz): 90 m², un dormitorio con cama doble grande y otro con dos camas, dos baños y balcón a la torre de la Catedral. Hasta 5 personas.",
+   "fotos": {
+    "diptico": "335339636",
+    "diptico_posicion": "62% 50%",
+    "hero": "870507584-alto",
+    "hero_posicion": "56% 42%",
+    "torre": "870507584",
+    "og": "335339636"
+   },
+   "estancias": [
+    {
+     "id": "salon",
+     "nombre": "Salón y comedor",
+     "texto": "Arcos, sofá cama, baúles y mesa de comedor grande.",
+     "fotos": [
+      "335339636",
+      "335339462",
+      "335339615",
+      "335339431",
+      "335339606"
+     ]
+    },
+    {
+     "id": "cocina",
+     "nombre": "Cocina",
+     "texto": "Cocina negra con lavavajillas, horno, microondas y cafetera.",
+     "fotos": [
+      "335339640",
+      "335339612",
+      "335339601"
+     ]
+    },
+    {
+     "id": "dormitorios",
+     "nombre": "Dormitorios",
+     "texto": "Uno con cama doble grande y otro con dos camas individuales.",
+     "fotos": [
+      "335339665",
+      "335339638",
+      "335339562",
+      "335339542"
+     ]
+    },
+    {
+     "id": "banos",
+     "nombre": "Baños",
+     "texto": "Dos, con ducha.",
+     "fotos": []
+    },
+    {
+     "id": "balcon",
+     "nombre": "Balcón y vistas",
+     "texto": "La torre al otro lado de la reja.",
+     "fotos": [
+      "870507584"
+     ]
+    }
+   ],
+   "detalles": [
+    {
+     "foto": "335339542",
+     "titulo": "La flor de lis del cabecero",
+     "texto": "Forja clara con volutas, en el dormitorio gris azulado."
+    },
+    {
+     "foto": "335339462",
+     "titulo": "Los arcos",
+     "texto": "Separan el salón del comedor y dejan pasar la luz de los balcones."
+    },
+    {
+     "foto": "335339489",
+     "titulo": "Los baúles",
+     "texto": "De viaje, antiguos, hacen de mueble en el salón."
+    }
+   ],
+   "marquee": [
+    {
+     "foto": "335339542",
+     "texto": "la flor de lis del cabecero"
+    },
+    {
+     "foto": "335339489",
+     "texto": "los baúles"
+    },
+    {
+     "foto": "335339637",
+     "texto": "el armario"
+    },
+    {
+     "foto": "335339462",
+     "texto": "los arcos"
+    },
+    {
+     "foto": "335339645",
+     "texto": "la campana de la puerta"
+    }
+   ],
+   "puerta": "335339645"
+  }
+ ],
+ "comun": {
+  "licencia": "AT-BA-00139",
+  "direccion": "C/ Meléndez Valdés, 1",
+  "cp": "06002",
+  "ciudad": "Badajoz",
+  "geo": [
+   38.8784735,
+   -6.970451
+  ],
+  "anfitriona": "Verónica",
+  "anfitriona_nota": 9.9,
+  "azotea": [
+   "894933741",
+   "894943460",
+   "894944495",
+   "894944217",
+   "894934700"
+  ]
+ }
+}

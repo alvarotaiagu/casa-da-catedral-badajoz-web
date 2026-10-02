@@ -1,0 +1,128 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Módulo «El libro de visitas» (opiniones). SE PUEDE QUITAR: todo su HTML
+   está en <section id="libro" data-modulo="libro">, su CSS aquí y su JS en
+   js/libro.js. Receta en el README (node scripts/quitar-libro.mjs).
+
+   Renglones: el rayado del papel y TODO lo que se escribe encima comparten
+   una sola medida, --renglon. Cada línea de texto ocupa un renglón y los
+   espacios son múltiplos de él, así ninguna letra pisa una raya.
+   ═══════════════════════════════════════════════════════════════════════════ */
+.libro { --raya: #C3CEDA; --margen-rojo: #D6A39B; background: var(--mesa); color: var(--cal); padding-bottom: clamp(64px, 9vw, 130px); }
+.libro__mesa {
+  padding: clamp(44px, 6vw, 96px) var(--margen) 0;
+  background: radial-gradient(120% 90% at 28% 8%, #4C3527 0%, var(--mesa) 55%, #1C130E 100%);
+}
+.libro__abierto {
+  position: relative; max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background: var(--papel); color: var(--tinta);
+  box-shadow: 0 60px 90px -50px rgba(0, 0, 0, .85), 0 0 0 1px rgba(0, 0, 0, .3), inset 0 0 60px rgba(120, 90, 50, .08);
+}
+.libro__abierto::before {            /* el lomo */
+  content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 56px; transform: translateX(-50%); pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(60, 40, 20, .1) 38%, rgba(60, 40, 20, .22) 50%, rgba(60, 40, 20, .1) 62%, transparent);
+}
+.libro__pagina { position: relative; padding: clamp(30px, 4vw, 56px); }
+
+/* página izquierda: el sello, la marca y el título */
+.libro__pagina--izq { text-align: center; }
+.libro__izq-dentro { position: sticky; top: calc(var(--alto-cabecera) + 32px); display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.libro__sello { width: 112px; height: 112px; color: #5E5852; }
+.libro__pagina--izq:has(.libro__foto[hidden]) .libro__sello { width: 176px; height: 176px; }
+.libro__marca { font: 400 .78rem/1.3 var(--tipo-display); letter-spacing: .36em; text-transform: uppercase; padding-left: .36em; }
+.libro__titulo { font: italic 400 clamp(2.2rem, 4.2vw, 3.3rem)/1.08 var(--tipo-texto); max-width: 14ch; }
+.libro__nota { font-size: 1rem; line-height: 1.45; color: var(--apagado); max-width: 30ch; }
+.libro__foto { position: relative; width: min(300px, 86%); margin: 8px 0 0; padding: 9px 9px 30px; background: #fff; transform: rotate(-2.4deg); box-shadow: 0 12px 22px -12px rgba(0, 0, 0, .55); }
+.libro__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.libro__foto figcaption { position: absolute; left: 0; right: 0; bottom: 7px; font: italic 400 .9rem/1 var(--tipo-texto); color: var(--apagado); }
+.libro__foto::before { content: ""; position: absolute; left: 50%; top: -11px; width: 84px; height: 24px; transform: translateX(-50%) rotate(3deg); background: rgba(232, 220, 190, .82); box-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
+
+/* página derecha: papel rayado */
+.libro__pagina--der { --renglon: 36px; display: flex; flex-direction: column; }
+.libro__pestanas { position: absolute; top: -34px; right: clamp(24px, 4vw, 56px); display: flex; gap: 4px; }
+.libro__pestana {
+  min-height: 34px; padding: 0 14px; border: 0; cursor: pointer;
+  background: #E7DECD; color: var(--tinta); font: italic 400 1.02rem/34px var(--tipo-texto);
+  border-radius: 3px 3px 0 0; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .08);
+}
+.libro__pestana[aria-pressed="true"] { background: var(--papel); box-shadow: none; }
+.libro__pestana:focus-visible { outline: 2px solid var(--acento-texto); outline-offset: 2px; }
+.libro__hoja {
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent calc(var(--renglon) - 1px), var(--raya) calc(var(--renglon) - 1px));
+  background-size: 100% var(--renglon);
+  background-repeat: repeat;
+}
+.libro__cabecera {
+  display: flex; justify-content: space-between; height: calc(var(--renglon) * 2); padding-top: var(--renglon);
+  font: italic 400 .98rem/var(--renglon) var(--tipo-texto); color: var(--apagado);
+  box-shadow: inset 0 -1.5px 0 var(--margen-rojo);
+}
+.libro__citas { margin: 0; }
+.libro__entrada { padding-top: 0; }
+.libro__entrada:first-child { padding-top: var(--renglon); }
+.libro__entrada[hidden] { display: none; }
+.libro__texto { font: italic 400 1.22rem/var(--renglon) var(--tipo-texto); }
+.libro__firma { font: 400 .66rem/var(--renglon) var(--tipo-display); letter-spacing: .16em; text-transform: uppercase; color: var(--acento-texto); }
+.libro__renglon { display: block; white-space: nowrap; }
+
+/* escritura: cada renglón se descubre de izquierda a derecha (lo pone js/libro.js) */
+.libro__renglon.es-pendiente, .libro__firma.es-pendiente,
+.libro__texto.es-oculta-hasta-medir, .libro__texto.es-oculta-hasta-medir + .libro__firma { clip-path: inset(0 100% 0 0); }
+.libro__renglon.es-escrita, .libro__firma.es-escrita { clip-path: inset(0 0 0 0); transition: clip-path var(--dur, .8s) linear; }
+
+/* el sello rojo, que cae al final */
+.libro__sello-rojo { height: calc(var(--renglon) * 5); padding-top: var(--renglon); display: flex; flex-direction: column; align-items: flex-end; }
+.sello-rojo {
+  width: 128px; height: 128px; border-radius: 50%; margin-right: 6px;
+  border: 2.5px solid var(--tinta-sello); color: var(--tinta-sello);
+  box-shadow: inset 0 0 0 4px var(--papel), inset 0 0 0 5.5px var(--tinta-sello);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  transform: rotate(-11deg); text-align: center; background: rgba(247, 242, 232, .72);
+}
+.sello-rojo b { font: 400 2.5rem/1 var(--tipo-display); }
+.sello-rojo span { font: 400 .58rem/1.35 var(--tipo-display); letter-spacing: .14em; text-transform: uppercase; }
+.sello-rojo__pie { margin-top: 4px; font: italic 400 1rem/var(--renglon) var(--tipo-texto); color: var(--apagado); }
+.libro__sello-rojo.es-por-caer .sello-rojo { opacity: 0; transform: rotate(-26deg) scale(1.7); }
+.libro__sello-rojo.es-caido .sello-rojo { animation: sello-cae .62s cubic-bezier(.3, 0, .4, 1) both; }
+@keyframes sello-cae {
+  0% { opacity: 0; transform: rotate(-26deg) scale(1.7); }
+  62% { opacity: 1; transform: rotate(-10deg) scale(.94); }
+  80% { transform: rotate(-11.5deg) scale(1.03); }
+  100% { opacity: 1; transform: rotate(-11deg) scale(1); }
+}
+.libro__mas { margin-top: 18px; font-size: 1.05rem; color: var(--apagado); }
+
+/* móvil: una sola página, el sello arriba; renglones a la medida de la letra */
+@media (max-width: 760px) {
+  .libro__abierto { grid-template-columns: minmax(0, 1fr); }
+  .libro__abierto::before { display: none; }
+  .libro__pagina--izq { padding-bottom: 8px; }
+  .libro__pagina--izq:has(.libro__foto[hidden]) .libro__sello { width: 120px; height: 120px; }
+  .libro__pagina--der { --renglon: 32px; padding-top: 52px; }
+  .libro__pestanas { position: static; justify-content: flex-start; margin: 0 0 0 -4px; }
+  .libro__pestana { background: transparent; box-shadow: inset 0 0 0 1px var(--linea-fuerte); border-radius: 2px; }
+  .libro__pestana[aria-pressed="true"] { background: var(--hierro); color: var(--cal); box-shadow: none; }
+  .libro__texto { font-size: 1.12rem; }
+  .libro__sello-rojo { align-items: center; }
+}
+
+/* [MANDO DE MAQUETA] versión sobria: lista limpia de citas, sello quieto */
+.densidad-sobria .libro { background: var(--cal); color: var(--tinta); }
+.densidad-sobria .libro__mesa { background: none; }
+.densidad-sobria .libro__abierto { background: transparent; box-shadow: none; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(24px, 4vw, 64px); }
+.densidad-sobria .libro__abierto::before, .densidad-sobria .libro__cabecera { display: none; }
+.densidad-sobria .libro__pagina { padding-left: 0; padding-right: 0; }
+.densidad-sobria .libro__pagina--izq { text-align: left; }
+.densidad-sobria .libro__izq-dentro { align-items: flex-start; }
+.densidad-sobria .libro__hoja { background: none; }
+.densidad-sobria .libro__pestanas { position: static; margin-bottom: 8px; justify-content: flex-start; }
+.densidad-sobria .libro__pestana { background: transparent; box-shadow: inset 0 0 0 1px var(--linea-fuerte); border-radius: 2px; }
+.densidad-sobria .libro__pestana[aria-pressed="true"] { background: var(--hierro); color: var(--cal); }
+.densidad-sobria .libro__entrada { padding: 16px 0; border-bottom: 1px solid var(--linea); }
+.densidad-sobria .libro__texto { line-height: 1.45; }
+.densidad-sobria .libro__firma { line-height: 2; }
+.densidad-sobria .libro__sello-rojo { height: auto; align-items: flex-start; padding-top: 24px; }
+.densidad-sobria .libro__sello-rojo .sello-rojo { opacity: 1; transform: none; animation: none; }
+@media (max-width: 760px) { .densidad-sobria .libro__abierto { grid-template-columns: minmax(0, 1fr); } }
+/* fin del bloque [MANDO DE MAQUETA] */

@@ -1,0 +1,17 @@
+{
+ "_nota": "Citas literales de Booking, copiadas sin corregir y comprobadas el 2026-10-02 en casa-da-catedral-badajoz-bocetos/ref/booking*/texto.txt (la de la familia, completa, en pagina.html). Sin nombre de cliente hasta tener permiso: se firman con la casa. Las usan el libro de visitas de la portada (js/libro.js) y las páginas de cada casa (scripts/construir.mjs). El orden alterna las dos casas.",
+ "fuente": "Booking",
+ "comprobadas": "2026-10-02",
+ "citas": [
+  { "casa": "ramona", "texto": "La anfitriona siempre pendiente. Ascensor hasta el interior del apartamento. Ubicación." },
+  { "casa": "jeronimo", "texto": "El gusto con el que está decorado, con muchísimos detalles en cada rincón." },
+  { "casa": "ramona", "texto": "La ubicación es excelente, la casa es moderna, las camas súper cómodas, el trato con la propietaria excelente. Un 10 absoluto." },
+  { "casa": "jeronimo", "texto": "Verónica, la anfitriona, una maravilla. Sin duda, para repetir." },
+  { "casa": "ramona", "texto": "Fuimos en familia (2 niños de 10 y 13 años) y la comodidad del lugar y las instalaciones nos hizo la estancia muy fácil." },
+  { "casa": "jeronimo", "texto": "Apartamento con muy buena ubicación, muy luminoso. Decoración encantadora, los distintos ambientes crean una atmósfera relajada." },
+  { "casa": "ramona", "texto": "La casa es muy amplia y tiene todo al detalle para hacer la estancia comodisima." },
+  { "casa": "jeronimo", "texto": "En el centro de todo lo que merece la pena ver en Badajoz caminando." },
+  { "casa": "ramona", "texto": "Super céntrico . Genial para hacer turismo. . Limpio y muy completo." },
+  { "casa": "jeronimo", "texto": "Atención super amable y el alojamiento estupendo. De 10, sin duda alguna" }
+ ]
+}

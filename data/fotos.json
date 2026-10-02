@@ -1,0 +1,620 @@
+{
+ "_nota": "Generado por scripts/fotos.mjs desde scripts/fotos-lista.json. No editar a mano: cambiar la lista y volver a ejecutar.",
+ "fotos": [
+  {
+   "id": "248101584",
+   "casa": "ramona",
+   "alt": "La torre de la Catedral desde la puerta del balcón de Ramona, con la reja delante",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248101584-alto",
+   "casa": "ramona",
+   "alt": "La torre de la Catedral desde el salón de Ramona",
+   "w": 1340,
+   "h": 1230,
+   "anchos": [
+    480,
+    960,
+    1340
+   ]
+  },
+  {
+   "id": "248117591",
+   "casa": "ramona",
+   "alt": "La torre de la Catedral por la ventana de Ramona, vista desde el sofá",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248119413",
+   "casa": "ramona",
+   "alt": "Las almenas de la torre vistas desde abajo, por la ventana de Ramona",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106674",
+   "casa": "ramona",
+   "alt": "El balcón de Ramona: un jarrón de flores junto a la reja y la fachada de la Catedral detrás",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248105949",
+   "casa": "ramona",
+   "alt": "El salón de Ramona: sofá gris con chaise longue, alfombra negra de dibujo y espejo",
+   "w": 3000,
+   "h": 2258,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248118228",
+   "casa": "ramona",
+   "alt": "El sofá del salón de Ramona, junto al balcón",
+   "w": 3000,
+   "h": 2374,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106031",
+   "casa": "ramona",
+   "alt": "El comedor y el salón de Ramona: mesa de cristal con sillas de fibra",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248117552",
+   "casa": "ramona",
+   "alt": "La mesa de comedor de Ramona junto al balcón, con el aparador al fondo",
+   "w": 3000,
+   "h": 2392,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106320",
+   "casa": "ramona",
+   "alt": "El sillón de orejas rojo de Ramona, junto a una lámpara de pie",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106339",
+   "casa": "ramona",
+   "alt": "La cocina de Ramona, con azulejo hidráulico y muebles blancos",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106314",
+   "casa": "ramona",
+   "alt": "La encimera de la cocina de Ramona y su azulejo hidráulico",
+   "w": 3000,
+   "h": 1940,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106312",
+   "casa": "ramona",
+   "alt": "La cocina de Ramona, con la vitrina y el escurreplatos",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106154",
+   "casa": "ramona",
+   "alt": "Dormitorio de Ramona con dos camas individuales y cabecero de forja negra",
+   "w": 3000,
+   "h": 2200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106120",
+   "casa": "ramona",
+   "alt": "El otro dormitorio de Ramona, con dos camas y balcón",
+   "w": 3000,
+   "h": 2146,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248119195",
+   "casa": "ramona",
+   "alt": "Una mesita de forja junto a la ventana del dormitorio de Ramona",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248118666",
+   "casa": "ramona",
+   "alt": "Las camas de un dormitorio de Ramona, con cabecero de forja",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248117489",
+   "casa": "ramona",
+   "alt": "Un baño de Ramona, con estantería de forja y espejo",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248117684",
+   "casa": "ramona",
+   "alt": "Un baño de Ramona, con ducha y lavabo sobre mueble de forja",
+   "w": 3000,
+   "h": 2264,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248118027",
+   "casa": "ramona",
+   "alt": "La ducha de uno de los baños de Ramona",
+   "w": 1846,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248118145",
+   "casa": "ramona",
+   "alt": "Un lazo de terciopelo rojo atado a un jarrón de cristal",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248106316",
+   "casa": "ramona",
+   "alt": "El aparador tallado de madera oscura de Ramona",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "248118915",
+   "casa": "ramona",
+   "alt": "Flores secas sobre un mueble tallado",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "583881414",
+   "casa": "ramona",
+   "alt": "La puerta de Ramona desde la escalera, con su «R» y la pizarrita",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "583881411",
+   "casa": "ramona",
+   "alt": "La «R» blanca de la puerta de Ramona, dentro de una corona de flores secas",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "583881420",
+   "casa": "ramona",
+   "alt": "La puerta de Ramona con la «R» y la pizarrita colgada",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "894933741",
+   "casa": "ramona",
+   "alt": "La terraza con toldo y sillas de forja blancas, con la torre de la Catedral al lado",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440,
+    1920
+   ]
+  },
+  {
+   "id": "894934700",
+   "casa": "ramona",
+   "alt": "La terraza con la ducha, bajo el cielo de Badajoz",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "870507584",
+   "casa": "jeronimo",
+   "alt": "La torre de la Catedral desde el balcón de Jerónimo, detrás de la reja",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "870507584-alto",
+   "casa": "jeronimo",
+   "alt": "La torre de la Catedral, con sus almenas, el cuerpo de campanas y el reloj, vista desde la ventana",
+   "w": 2000,
+   "h": 1980,
+   "anchos": [
+    480,
+    960,
+    1440,
+    1920
+   ]
+  },
+  {
+   "id": "870507584-movil",
+   "casa": "jeronimo",
+   "alt": "La torre de la Catedral, con sus almenas, el cuerpo de campanas y el reloj, vista desde la ventana",
+   "w": 1200,
+   "h": 1980,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "335339636",
+   "casa": "jeronimo",
+   "alt": "El salón de Jerónimo: arcos blancos, suelo claro y una vitrina de forja",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339462",
+   "casa": "jeronimo",
+   "alt": "Los arcos del salón de Jerónimo, con una lámpara de araña",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339615",
+   "casa": "jeronimo",
+   "alt": "El salón de Jerónimo, con sillón gris y dos balcones",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339431",
+   "casa": "jeronimo",
+   "alt": "El salón de Jerónimo: mesa baja de madera y baúles como mueble de la televisión",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339606",
+   "casa": "jeronimo",
+   "alt": "El comedor de Jerónimo, con lámpara de araña y el arco al fondo",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339665",
+   "casa": "jeronimo",
+   "alt": "Dormitorio de Jerónimo con cama doble grande y cojines granates",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339638",
+   "casa": "jeronimo",
+   "alt": "El dormitorio gris azulado de Jerónimo, con cabecero de forja",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339562",
+   "casa": "jeronimo",
+   "alt": "Una manta verde sobre la cama blanca de Jerónimo",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339542",
+   "casa": "jeronimo",
+   "alt": "El cabecero de forja de Jerónimo, con una flor de lis entre volutas",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339640",
+   "casa": "jeronimo",
+   "alt": "La cocina negra de Jerónimo y la mesa de comedor",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339612",
+   "casa": "jeronimo",
+   "alt": "La cocina de Jerónimo, con frigorífico negro y balcón",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339601",
+   "casa": "jeronimo",
+   "alt": "La cocina negra de Jerónimo, con vitrina de cristal",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339645",
+   "casa": "jeronimo",
+   "alt": "La puerta de Jerónimo, con su placa en forma de campana",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339614",
+   "casa": "jeronimo",
+   "alt": "La escalera del edificio, con un montante de yeso en abanico sobre la puerta",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339643",
+   "casa": "jeronimo",
+   "alt": "El ascensor, que se abre dentro de la casa",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339637",
+   "casa": "jeronimo",
+   "alt": "El armario de madera de Jerónimo, con flores secas encima",
+   "w": 2000,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "335339489",
+   "casa": "jeronimo",
+   "alt": "Un baúl antiguo sobre el suelo claro de Jerónimo",
+   "w": 3000,
+   "h": 2000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "894943460",
+   "casa": "jeronimo",
+   "alt": "La terraza con la torre de la Catedral al lado, en un día de cielo azul",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440,
+    1920
+   ]
+  },
+  {
+   "id": "894944495",
+   "casa": "jeronimo",
+   "alt": "Un rincón de la terraza con buganvillas y sillones",
+   "w": 1910,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "894944217",
+   "casa": "jeronimo",
+   "alt": "La terraza con toldo y mesas de forja, y la torre al fondo",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  }
+ ]
+}
